@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Iter';
+  src: url('Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-variation-settings: 'wght' 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@custom-media --sm (width <= 479px);
+@custom-media --md (width >= 480px);
+@custom-media --lg (width >= 768px);
+@custom-media --xl (width >= 1080px);
+
+:root {
+  /* Color pallette */
+
+  --white: hsl(0, 0%, 100%);
+
+  /* primary */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+
+  /* neutral */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+
+  /* Font weight definitions */
+  --font-normal: 400px;
+  --font-bold: 700px;
+  --font-bolder: 800px;
+
+  /* Fonts */
+  font-family: 'Inter';
+  font-size: 15px;
+}
